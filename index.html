@@ -1,101 +1,138 @@
-<style>
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sam tidswell</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  html {
-    font-size: 16px;
-  }
+    html {
+      font-size: 16px;
+    }
 
-  body {
-    background: #fff;
-    color: #000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 56px 24px 80px;
-  }
-
-  main {
-    max-width: 640px;
-    margin: 0 auto;
-    font-size: 1rem;
-  }
-
-  p {
-    margin-bottom: 1.4em;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  a {
-    color: #000;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 3.2em;
-    align-items: start;
-  }
-
-  .image-grid img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .links {
-    margin-top: 3.2em;
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    flex-wrap: wrap;
-  }
-
-  .links a {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.85rem;
-    color: #000;
-    text-decoration: none;
-    border-bottom: 1px solid #000;
-    padding-bottom: 1px;
-  }
-
-  .links a:hover {
-    border-bottom-color: transparent;
-  }
-
-  @media (max-width: 720px) {
     body {
+      background: #fff;
+      color: #000;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      line-height: 1.6;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    main {
       max-width: 640px;
+      margin: 0 auto;
+      font-size: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.4em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
 
     .image-grid {
-      grid-template-columns: 1fr;
-      gap: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 3.2em;
     }
-  }
 
-  @media (max-width: 480px) {
-    body {
-      padding: 36px 18px 60px;
+    .image-grid img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      filter: grayscale(100%);
     }
 
     .links {
-      gap: 14px;
+      margin-top: 3.2em;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
     }
-  }
-</style>
+
+    .links a {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.85rem;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #000;
+      padding-bottom: 1px;
+    }
+
+    .links a:hover {
+      border-bottom-color: transparent;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        max-width: 640px;
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 36px 18px 60px;
+      }
+
+      .links {
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <p>my name is sam. welcome to my personal site. i am based in stockholm and i like long runs.</p>
+
+    <p>i'm obsessed with endurance in the outdoors. i spend much of my time ultrarunning and working with people exploring performance and expanding what humans can do.</p>
+
+    <p>i've spent eight years operating and investing in early-stage technology companies, and am now working with and learning from companies, researchers and athletes at the frontier of outdoor culture, endurance and performance.</p>
+
+    <p>i care deeply about wild spaces, the power they hold, and how feats of endurance in these places change how we understand ourselves and the world around us. i write about some of this at <a href="https://suffertogether.substack.com/" target="_blank" rel="noopener">Suffer Together</a>.</p>
+
+    <p>i also work selectively with runners on training, racing and athlete mindset. please get in touch below if you'd like to discuss working together.</p>
+  </main>
+
+  <div class="image-grid" aria-label="Personal site photos">
+    <img src="images/personal-1.jpg" alt="">
+    <img src="images/personal-2.jpg" alt="">
+    <img src="images/personal-3.jpg" alt="">
+  </div>
+
+  <footer class="links">
+    <a href="mailto:sam@samtidswell.com">email</a>
+    <a href="https://suffertogether.substack.com/" target="_blank" rel="noopener">blog</a>
+    <a href="https://www.strava.com/athletes/119301425" target="_blank" rel="noopener">strava</a>
+    <a href="https://www.instagram.com/sam.tidswell/" target="_blank" rel="noopener">instagram</a>
+  </footer>
+
+</body>
+</html>
